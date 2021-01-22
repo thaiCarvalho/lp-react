@@ -1,0 +1,28 @@
+.header {
+  background-color: $c-white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+  font-family: $f-default;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &--left, &--right {
+      ul {
+        align-items: center;
+        display: flex;
+        li {
+          margin-right: 32px;
+          a {
+            color: $c-black;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
