@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/lp-react/static/css/main.5d7c170e.chunk.css",
+    "main.js": "/lp-react/static/js/main.5de1554a.chunk.js",
+    "main.js.map": "/lp-react/static/js/main.5de1554a.chunk.js.map",
+    "runtime-main.js": "/lp-react/static/js/runtime-main.046fca42.js",
+    "runtime-main.js.map": "/lp-react/static/js/runtime-main.046fca42.js.map",
+    "static/js/2.311d60e9.chunk.js": "/lp-react/static/js/2.311d60e9.chunk.js",
+    "static/js/2.311d60e9.chunk.js.map": "/lp-react/static/js/2.311d60e9.chunk.js.map",
+    "static/js/3.73a1c5a5.chunk.js": "/lp-react/static/js/3.73a1c5a5.chunk.js",
+    "static/js/3.73a1c5a5.chunk.js.map": "/lp-react/static/js/3.73a1c5a5.chunk.js.map",
+    "index.html": "/lp-react/index.html",
+    "static/css/main.5d7c170e.chunk.css.map": "/lp-react/static/css/main.5d7c170e.chunk.css.map",
+    "static/js/2.311d60e9.chunk.js.LICENSE.txt": "/lp-react/static/js/2.311d60e9.chunk.js.LICENSE.txt",
+    "static/media/shopping-cart.970ae18c.svg": "/lp-react/static/media/shopping-cart.970ae18c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.046fca42.js",
+    "static/js/2.311d60e9.chunk.js",
+    "static/css/main.5d7c170e.chunk.css",
+    "static/js/main.5de1554a.chunk.js"
+  ]
+}
