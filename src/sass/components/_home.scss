@@ -1,4 +1,83 @@
 .banner {
   background-color: $c-green-jussi;
+  font-family: $f-default;
   height: 560px;
+
+  &-container {
+    align-items: center;
+    display: flex;
+  }
+
+  &-title {
+    display: flex;
+    position: relative;
+    span {
+      color: $c-white;
+      font-size: 64px;
+      margin-right: 10px;
+      position: absolute;
+      left: -50px;
+    }
+    h1 {
+      margin: 10px 0 16px;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 77px;
+      color: $c-black;
+      text-transform: uppercase;
+    }
+  }
+
+  &-content {
+    font-size: 16px;
+    max-width: 329px;
+  }
+
+  &-button {
+    align-items: center;
+    border: {
+      color: $c-black;
+      style: solid;
+      radius: 6px;
+      width: 1px;
+    }
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    margin-top: 32px;
+    width: 169px;
+  }
+
+  &-img {
+    margin-top: 40px;
+  }
+}
+
+.lojas {
+  background-color: $c-gray;
+
+  font-family: $f-default;
+  &-content {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--text {
+      p {
+        margin: 0;
+      }
+      span {
+        margin: 48px;
+      }
+    }
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    a {
+      margin-right: 48px;
+    }
+  }
 }
