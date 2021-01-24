@@ -204,6 +204,7 @@
         }
         margin: 7px;
         padding: 16px;
+        font-weight: 500;
   
         &-img {
           align-items: center;
@@ -211,7 +212,6 @@
           border-radius: 50%;
           display: flex;
           font-size: 32px;
-          font-weight: 500;
           justify-content: center;
           height: 100px;
           width: 100px;
@@ -219,27 +219,23 @@
 
         &-nome {
           font-size: 16px;
-          font-weight: 500;
           margin-top: 53px;
         }
 
         &-descricao {
           color: $c-pink-jussi;
           font-size: 12px;
-          font-weight: 500;
           margin-top: 16px;
           margin-bottom: 16px;
         }
         &-list {
           color: $c-dark-grey;
           font-size: 12px;
-          font-weight: 500;
         }
         &-button {
           background-color: $c-green-jussi;
           border-radius: 6px;
           font-size: 16px;
-          font-weight: 500;
           height: 48px;
           margin-top: 16px;
           width: 209px;
@@ -248,4 +244,34 @@
     }
   }
 
+  .contato {
+    align-items: center;
+    background-color: $c-pink-jussi;
+    height: 480px;
+    display: flex;
+    color: $c-white;
+    text-align: center;
+    h2 {
+      font-size: 32px;
+      max-width: 676px;
+      margin: 0 auto;
+      font-weight: 700;
+      line-height: 40px;
+    }
+
+    &-email {
+      margin-top: 32px;
+      font-weight: 500;
+      span {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 26px;
+        @media screen and (min-width: 768px) {
+          font-size: 32px;
+        }
+      }
+    }
+  }
 }
