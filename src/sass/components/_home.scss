@@ -1,83 +1,251 @@
-.banner {
-  background-color: $c-green-jussi;
+.home {
   font-family: $f-default;
-  height: 560px;
-
-  &-container {
-    align-items: center;
-    display: flex;
-  }
-
-  &-title {
-    display: flex;
-    position: relative;
-    span {
-      color: $c-white;
-      font-size: 64px;
-      margin-right: 10px;
-      position: absolute;
-      left: -50px;
+  .banner {
+    background-color: $c-green-jussi;
+    height: auto;
+    @media screen and (min-width: 768px) {
+      height: 390px;
     }
-    h1 {
-      margin: 10px 0 16px;
-      font-weight: 500;
-      font-size: 64px;
-      line-height: 77px;
-      color: $c-black;
-      text-transform: uppercase;
+    @media screen and (min-width: 1024px) {
+      height: 560px;
     }
-  }
-
-  &-content {
-    font-size: 16px;
-    max-width: 329px;
-  }
-
-  &-button {
-    align-items: center;
-    border: {
-      color: $c-black;
-      style: solid;
-      radius: 6px;
-      width: 1px;
-    }
-    display: flex;
-    justify-content: center;
-    height: 48px;
-    margin-top: 32px;
-    width: 169px;
-  }
-
-  &-img {
-    margin-top: 40px;
-  }
-}
-
-.lojas {
-  background-color: $c-gray;
-
-  font-family: $f-default;
-  &-content {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &--text {
-      p {
-        margin: 0;
+  
+  
+    &-container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+  
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
       }
+    }
+  
+    &--left {
+      @media screen and (min-width: 768px) {
+        margin-left: 50px;
+      }
+      @media screen and (min-width: 1024px) {
+        margin-left: 0;
+      }
+    }
+  
+    &-title {
+      display: flex;
+      position: relative;
       span {
-        margin: 48px;
+        color: $c-white;
+        font-size: 30px;
+        margin-right: 10px;
+        margin-top: 10px;
+  
+        @media screen and (min-width: 768px) {
+          font-size: 40px;
+          position: absolute;
+          left: -50px;
+        }
+        @media screen and (min-width: 1024px) {
+          font-size: 64px;
+          margin-top: 0;
+         
+        }
+      }
+      h1 {
+        margin: 10px 0 16px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 46px;
+        color: $c-black;
+        text-transform: uppercase;
+  
+        @media screen and (min-width: 768px) {
+          font-size: 40px;
+        }
+        @media screen and (min-width: 1024px) {
+          font-size: 64px;
+          line-height: 77px;
+        }
+      }
+    }
+  
+    &-content {
+      font-size: 16px;
+      max-width: 329px;
+      margin-left: 24px;
+      @media screen and (min-width: 768px) {
+        margin-left: 0;
+      }
+    }
+  
+    &-button {
+      align-items: center;
+      border: {
+        color: $c-black;
+        style: solid;
+        radius: 6px;
+        width: 1px;
+      }
+      display: flex;
+      justify-content: center;
+      height: 48px;
+      margin-top: 32px;
+      margin-left: 24px;
+      width: 169px;
+      @media screen and (min-width: 768px) {
+        margin-left: 0;
+      }
+      a {
+        color: $c-black;
+      }
+    }
+  
+    &-img {
+      margin-top: 40px;
+      width: 100%;
+  
+      @media screen and (min-width: 1024px) {
+        width: unset;
+      }
+    }
+  }
+  
+  .lojas {
+    background-color: $c-gray;
+  
+    &-content {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      @media screen and (min-width: 768px) {
+        height: 130px;
+  
+      }
+      @media screen and (min-width: 1024px) {
+        height: 80px;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+  
+      &--text {
+        margin: 20px 0;
+        @media screen and (min-width: 1024px) {
+          margin: 0;
+        }
+        p {
+          font-size: 16px;
+          margin: 0;
+        }
+        span {
+          @media screen and (min-width: 1024px) {
+            margin: 48px;
+          }
+        }
+      }
+    }
+  
+    &-logo {
+      display: flex;
+      align-items: center;
+      
+      justify-content: space-between;
+      flex-direction: column;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
+      @media screen and (min-width: 1024px) {
+        width: 65%;
+      }
+  
+      a {
+        margin-bottom: 10px;
+        @media screen and (min-width: 768px) {
+          margin: 0px 24px;
+        }
+        @media screen and (min-width: 1024px) {
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+  .solucoes {
+    margin-top: 56px;
+    h2 {
+      color: $c-black;
+      font-size: 26px;
+      margin: 0 0 24px;
+      text-transform: uppercase;
+      span {
+        color: $c-green-jussi;
+        position: relative;
+      }
+  
+      @media screen and (min-width: 1024px) {
+        font-size: 32px;
+      }
+    }
+  
+    &-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      @media screen and (min-width: 1024px) {
+        flex-wrap: nowrap;
+      }
+  
+      &--card {
+        border: {
+          color: $c-gray;
+          radius: 4px;
+          style: solid;
+          width: 1px;
+        }
+        margin: 7px;
+        padding: 16px;
+  
+        &-img {
+          align-items: center;
+          background-color: $c-gray;
+          border-radius: 50%;
+          display: flex;
+          font-size: 32px;
+          font-weight: 500;
+          justify-content: center;
+          height: 100px;
+          width: 100px;
+        }
+
+        &-nome {
+          font-size: 16px;
+          font-weight: 500;
+          margin-top: 53px;
+        }
+
+        &-descricao {
+          color: $c-pink-jussi;
+          font-size: 12px;
+          font-weight: 500;
+          margin-top: 16px;
+          margin-bottom: 16px;
+        }
+        &-list {
+          color: $c-dark-grey;
+          font-size: 12px;
+          font-weight: 500;
+        }
+        &-button {
+          background-color: $c-green-jussi;
+          border-radius: 6px;
+          font-size: 16px;
+          font-weight: 500;
+          height: 48px;
+          margin-top: 16px;
+          width: 209px;
+        }
       }
     }
   }
 
-  &-logo {
-    display: flex;
-    align-items: center;
-    a {
-      margin-right: 48px;
-    }
-  }
 }
