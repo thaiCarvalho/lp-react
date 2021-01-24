@@ -41,16 +41,18 @@ function App() {
         <section className="quem-somos" id="conheca">
           <div className="container">
             <div className="quem-somos-content">
-            <div className="quem-somos--left">
-                <div className="quem-somos-title"><h2>Olá, somos a Jüssi</h2></div>
-                <div className="quem-somos-text">A Jüssi é uma agência integrante do grupo global WPP que vem há 10 anos consolidando o pensamento voltado para produtos e resolução de problemas. Nosso área dedicada exclusivamente para Produtos Digitais é organizada em 6 especialidades: Product Managamenet, User Experience Design, SEO, Tecnologia, Agile e User Behavior Analytics.</div>
-                <div className="quem-somos-button">
+              <div className="quem-somos--left">
+                <div className="quem-somos--left-title"><h2>Olá, somos a Jüssi</h2></div>
+                <div className="quem-somos--left-text">A Jüssi é uma agência integrante do grupo global WPP que vem há 10 anos consolidando o pensamento voltado para produtos e resolução de problemas. Nosso área dedicada exclusivamente para Produtos Digitais é organizada em 6 especialidades: Product Managamenet, User Experience Design, SEO, Tecnologia, Agile e User Behavior Analytics.</div>
+                <div className="quem-somos--left-button">
                   <a href="https://jussi.com.br/about.html" rel="noreferrer" target="_blank">Conheça a Jüssi</a>
                 </div>
               </div>
-              <div className="quem-somos--right">
-                <img className="quem-somos-img" src={quemSomosImg} alt="img"/>
-              </div>
+            </div>
+          </div>
+          <div className="quem-somos--right">
+            <div className="container">
+              <img className="quem-somos-img" src={quemSomosImg} alt="img"/>
             </div>
           </div>
         </section>
