@@ -274,4 +274,89 @@
       }
     }
   }
+
+  .news {
+    align-items: center;
+    background-color: $c-black;
+    display: flex;
+    height: 436px;
+    color: $c-white;
+
+    h2 {
+      font-size: 32px;
+      max-width: 676px;
+      margin: 0 auto;
+      font-weight: 700;
+      line-height: 40px;
+      text-transform: uppercase;
+      display: flex;
+
+      @media screen and (min-width: 768px) {
+        text-align: center;
+      }
+      span {
+        color: $c-green-jussi;
+        margin-right: 32px;
+      }
+    }
+
+    form {
+      margin: 24px auto 0;
+      max-width: 502px;
+      input {
+        height: 60px;
+        background-color: transparent;
+        border: {
+          color: $c-green-jussi;
+          style: solid;
+          width: 0 0 2px 0;
+        }
+        font-size: 16px;
+      }
+    }
+
+    &-input {
+      width: 60%;
+      color: $c-white;
+
+
+      &::placeholder {
+        color: $c-white;
+      }
+    }
+    &-submit {
+      color: $c-green-jussi;
+      text: {
+        align: end;
+        transform: uppercase;
+      }
+      width: 40%;
+    }
+  }
+
+  .footer {
+    align-items: center;
+    background-color: $c-black;
+    display: flex;
+    height: 80px;
+
+    &-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (min-width: 1024px) {
+        width: 1024px;
+      }
+
+      &--img {
+        width: 50%;
+      }
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+      }
+    }
+  }
 }

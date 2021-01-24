@@ -149,10 +149,9 @@ textarea {
 
 .container {
   padding: 0 16px;
+  margin: 0 auto;
   @media screen and (min-width: 1024px) {
     max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 16px;
   }
 }
 

@@ -4,6 +4,10 @@ import Header from './components/Header'
 import Lojas from './components/Lojas'
 import Solucoes from './components/NossasSolucoes'
 import quemSomosImg from './images/image-jussi.jpg'
+import iconFacebook from './images/facebook.png'
+import iconInstagram from './images/instagram.png'
+import iconLinkedin from './images/linkedin.png'
+import iconWppCompany from './images/wppcompany.png'
 
 function App() {
   return (
@@ -61,15 +65,28 @@ function App() {
         </section>
         <section className="news">
           <div className="container">
-            <h2><span>//</span> receba novidades da nossa área de produtos digitais.</h2>
-            <form>
-              <input type="text" placeholder="Digite seu e-mail" />
-              <input type="submit" value="cadastrar" />
-            </form>
+            <div className="news-content">
+              <h2><span>//</span> receba novidades da nossa áreade produtos digitais.</h2>
+              <form>
+                <input className="news-input" type="text" placeholder="Digite seu e-mail" />
+                <input className="news-submit" type="submit" value="cadastrar" />
+              </form>
+            </div>
           </div>
         </section>
         <section className="footer">
-
+          <div className="container">
+            <div className="footer-content">
+              <div className="footer-content--img">
+                <img src={iconWppCompany} alt="logo wpp"/>
+              </div>
+              <ul>
+                <li><a href="https://pt-br.facebook.com/agencia.jussi/" rel="noreferrer" target="_blank"><img src={iconFacebook} alt="logo facebook"/></a></li>
+                <li><a href="https://www.instagram.com/jussi/" rel="noreferrer" target="_blank"><img src={iconInstagram} alt="logo instagram"/></a></li>
+                <li><a href="https://www.linkedin.com/company/agencia-jussi/" rel="noreferrer" target="_blank"><img src={iconLinkedin} alt="logo linkedin"/></a></li>
+              </ul>
+            </div>
+          </div>
         </section>
       </div>
     </div>
