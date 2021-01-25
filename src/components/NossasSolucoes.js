@@ -72,6 +72,8 @@ class Solucoes  extends Component {
   render() {
 
     const list = solucoes
+
+    if(!list) return null
     
     return (
       <div className="container">

@@ -1,5 +1,6 @@
 import logo from '../images/logoJussiVectorGreen.png';
 import logoCart from '../icons/shopping-cart.svg';
+import ListSeach from './SearchBar/Container';
 
 function Header() {
   return (
@@ -13,7 +14,7 @@ function Header() {
           </ul>
         </div>
         <div className="header-container--right">
-          <div id="#header-busca"></div>
+          <ListSeach />
           <ul>
             <li><a href="#">Login</a></li>
             <a className="logo-cart"><img alt="logo" src={logoCart}/></a>
