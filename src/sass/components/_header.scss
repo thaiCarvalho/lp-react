@@ -1,22 +1,37 @@
 .header {
   background-color: $c-white;
-  height: 80px;
+  height: 155px;
   display: flex;
   align-items: center;
   margin: 0 24px;
   font-family: $f-default;
 
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
+
   &-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
 
     &--left, &--right {
       ul {
         align-items: center;
         display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 768px) {
+          flex-direction: row;
+        }
         li {
-          margin-right: 32px;
+          @media screen and (min-width: 768px) {
+            margin-right: 32px;
+          }
           a {
             color: $c-black;
             font-weight: 500;
@@ -27,8 +42,14 @@
 
     &--right {
       display: flex;
-      width: 27%;
-      justify-content: space-between;
+      justify-content: center;
+
+      @media screen and (min-width: 768px) {
+        justify-content: space-between;
+      }
+      @media screen and (min-width: 1024px) {
+        width: 27%;
+      }
     }
   }
 
@@ -89,9 +110,13 @@
     max-height: 400px;
     overflow: auto;
     padding: 16px;
-    width: 40%;
+    width: 90%;
     right: 18px;
     z-index: 40;
+
+    @media screen and (min-width: 768px) {
+      width: 40%;
+    }
 
     &--list {
       img {

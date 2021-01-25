@@ -6,8 +6,7 @@ class ListSeach  extends Component {
 
   state = {
     seachField: '',
-    list: [],
-    focus: false
+    list: []
   }
 
   handleChange = (e) => {

@@ -1,16 +1,18 @@
 import logo from '../images/logoJussiVectorGreen.png';
 import logoCart from '../icons/shopping-cart.svg';
 import ListSeach from './SearchBar/Container';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-function Header() {
+const Header = () => {
+
   return (
     <div className="header">
       <div className="header-container">
         <div className="header-container--left">
           <ul>
             <li><img src={logo} alt="logo" /></li>
-            <li><a href="#solucoes">Nossas soluções</a></li>
-            <li><a href="#conheca">Conheça a Jüssi</a></li>
+            <li><AnchorLink href="#solucoes">Nossas soluções</AnchorLink></li>
+            <li><AnchorLink href="#conheca">Conheça a Jüssi</AnchorLink></li>
           </ul>
         </div>
         <div className="header-container--right">

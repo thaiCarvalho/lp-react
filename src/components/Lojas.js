@@ -35,6 +35,7 @@ const ListaLojas = ({
       href={href}
       className="lojas-logo__item"
       id={id}
+      rel="noreferrer"
     >
       {body}
     </a>
@@ -46,16 +47,16 @@ const List = ({children}) => <div className="lojas-logo">{children}</div>
 class Lojas extends Component {
   static logos = {
 		brastemp: (
-      <img src={logoBrastemp}/>
+      <img src={logoBrastemp} alt="logoBrastemp"/>
 		),
 		compracerta: (
-      <img src={logoCompraCerta}/>
+      <img src={logoCompraCerta} alt="logoCompraCerta"/>
 		),
 		consul: (
-      <img src={logoConsul}/>
+      <img src={logoConsul} alt="logoConsul"/>
 		),
 		theBar: (
-      <img src={logoTheBar}/>
+      <img src={logoTheBar} alt="logoTheBar"/>
     )
   };
 
