@@ -22,7 +22,10 @@ class ListSeach  extends Component {
     }
   }
 
-  handleClickOutside() {
+  handleClickOutside(e) {
+    if (e.target.closest('.header-result')) {
+			return
+		}
     document.querySelector('.header-searchBox--overlay').classList.remove('active')
     const result = document.querySelector('.header-result')
     if(result) {
@@ -43,7 +46,7 @@ class ListSeach  extends Component {
 
   componentDidMount() {
     this.fetchApi()
-    // document.addEventListener('mousedown', this.handleClickOutside)
+    document.addEventListener('mousedown', this.handleClickOutside)
   }
 
   render() {
